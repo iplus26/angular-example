@@ -1,0 +1,16 @@
+{
+  "name": "angular-example",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "postinstall": "bower install",
+    "start": "node server.js"
+  },
+  "author": "Ivan Jiang",
+  "license": "WTFPL",
+  "dependencies": {
+    "bower": "^1.7.9",
+    "express": "^4.13.4",
+    "request-promise": "^3.0.0"
+  }
+}

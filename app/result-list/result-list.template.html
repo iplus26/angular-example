@@ -1,0 +1,20 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-2">
+      <!--Sidebar content-->
+
+      Search: <input ng-model="$ctrl.query" ng-change="$ctrl.search()"/>
+
+    </div>
+    <div class="col-md-10">
+      <!--Body content-->
+
+      <ul class="result">
+        <li ng-repeat="payload in $ctrl.payloads">
+          <a href="{{ payload.url }}" target="_blank">[{{ payload.type }}] {{ payload.title }}</a>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</div>
